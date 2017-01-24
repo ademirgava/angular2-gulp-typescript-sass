@@ -1,0 +1,35 @@
+<html lang="pt-br">
+<head>
+    <title>Angular 2 TypeScript Gulp QuickStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="app/sass/index.css">
+    <link rel="stylesheet" href="app/font-awesome/scss/font-awesome.css">
+    
+    <!-- Ag Grid style -->
+    <link href="lib/ag-grid/dist/styles/ag-grid.css" rel="stylesheet" />
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="lib/core-js/client/shim.min.js"></script>
+    
+    <script src="lib/zone.js/dist/zone.js"></script>
+    <script src="lib/reflect-metadata/Reflect.js"></script>
+    <script src="lib/systemjs/dist/system.src.js"></script>
+    
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app')
+                .then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<!-- 3. Display the application -->
+<body>
+<app>Loading...</app>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<div class="container user">
+    <div class="row"> 
+        <div class="col-sm-4">
+            <h2>User List</h2>
+        </div>
+    </div>
+    <div class="row"> 
+        <div class="col-xs-12">
+            <ag-grid-ng2 #agGrid style="width: 100%; height: 350px;" class="ag-fresh grid-list"
+            
+                    [gridOptions]="gridOptions"
+                    [columnDefs]="columnDefs"
+                    [showToolPanel]="showToolPanel"
+                    [rowData]="users"
+
+                    enableColResize
+                    enableSorting
+                    enableFilter
+                
+                    (rowClicked)="onRowClicked($event)"
+                    
+                    rowHeight="22">
+
+            </ag-grid-ng2>
+        </div>
+    </div>
+</div>

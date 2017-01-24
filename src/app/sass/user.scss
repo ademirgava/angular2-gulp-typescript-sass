@@ -1,0 +1,11 @@
+.user {
+    .grid-list{
+        .button {
+            padding-left: 5px;
+        
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

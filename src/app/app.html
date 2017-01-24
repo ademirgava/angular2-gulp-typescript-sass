@@ -1,0 +1,8 @@
+<div class="container">              
+    <ul class="nav nav-tabs" role="tablist">
+        <li [class]="getStyle(activeHome)"><a (click)="activeHome = !activeHome; activeTask = false; activeAbout = false" routerLink="/user">User</a></li>        
+        <li [class]="getStyle(activeAbout)"><a (click)="activeAbout = !activeAbout; activeHome = false; activeTask = false" routerLink="/about">About</a></li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet>

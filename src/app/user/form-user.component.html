@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>Cadastro de Usuários</h2>
+    <form>
+        <div class="form-group row">
+            <div class="col-sm-6">
+                <label>First Name:</label>
+                <input [(ngModel)]="user.firstName" name="first" class="form-control" palceholder="Your fisrt name">
+            </div>
+            <div class="col-sm-6">
+                <label>Last Name:</label>
+                <input [(ngModel)]="user.lastName" name="email" class="form-control" palceholder="Your last name">
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <div class="col-sm-12">
+            <label>Email:</label>
+            <input [(ngModel)]="user.email" name="email" type="email" class="form-control" id="email" palceholder="E-mail">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-6">
+                <label>User Name:</label>
+                <input [(ngModel)]="user.userName" name="userName" type="email" class="form-control" palceholder="Type your user name">
+            </div>
+            <div class="col-sm-6">
+                <label>Password:</label>
+                <input [(ngModel)]="user.password" name="password" type="pwd" class="form-control" palceholder="Type your password">
+            </div>
+        </div>
+        
+        <button type="button" class="btn btn btn-info" (click)="save()">Save</button>
+        <button type="button" class="btn btn btn-info" routerLink="/home">Cancel</button>
+    </form>
+</div>
